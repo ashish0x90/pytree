@@ -1,4 +1,8 @@
 A Library of various tree based data structres implemented in python language.
 
+For installing library run:
+python setup.py install
+
+
 Avaliable DataStructures :
-	 Binary Search Tree : pyds.tree.bsearchtree
+	 Binary Search Tree : pytree.bsearchtree

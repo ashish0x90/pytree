@@ -1,0 +1,12 @@
+HOW-TO for different data structures available 
+
+How to use Binary Search Tree:
+    from pytree.bsearchtree import BSearchTree
+    tree_inst = BSearchTree(12) #root node
+    tree_inst.insert(20) #couple of inserts
+    tree_inst.insert(10)
+    tree_inst.insert(50)
+    tree_inst.insert(5)
+    tree_inst.display() #display tree
+    tree_inst.delete(10) #delete something
+    tree_inst.display() #display tree again
