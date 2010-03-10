@@ -1,0 +1,4 @@
+A Library of various tree based data structres implemented in python language.
+
+Avaliable DataStructures :
+	 Binary Search Tree : pyds.tree.bsearchtree
