@@ -7,6 +7,6 @@ How to use Binary Search Tree:
     tree_inst.insert(10)
     tree_inst.insert(50)
     tree_inst.insert(5)
-    tree_inst.display() #display tree
+    tree_inst.preetyPrint() #display tree
     tree_inst.delete(10) #delete something
-    tree_inst.display() #display tree again
+    tree_inst.preetyPrint() #display tree again

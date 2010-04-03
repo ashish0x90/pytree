@@ -18,6 +18,15 @@ class Node(object):
                                                                       '%s <%s>'%(getattr(self.right,'data',None),
                                                                                hex(id(self.right))) if self.right else None ,
                                                                       hex(id(self)))
+    def prettyPrint(self,depth=0):
+        '''
+        Prints pretty btree representation
+        '''
+        if self.left:
+            self.left.prettyPrint(depth+1)
+        print "\t"*depth + str(self.data)
+        if self.right:
+            self.right.prettyPrint(depth+1)
 
 class bTree(object):        
     '''
@@ -28,6 +37,12 @@ class bTree(object):
     def __init__(self,root_data):
         self.__key = 1
         self._root = Node(root_data)
+
+    def prettyPrint(self):
+        '''
+        Prints pretty btree representation
+        '''
+        self.getRoot().prettyPrint()
 
     def getRoot(self):
         return self._root

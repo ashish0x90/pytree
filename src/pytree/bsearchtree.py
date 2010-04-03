@@ -26,9 +26,9 @@ class BSearchTree(bTree):
     tree_inst.insert(10)
     tree_inst.insert(50)
     tree_inst.insert(5)
-    tree_inst.display() #display tree
+    print tree_inst #display tree
     tree_inst.delete(10) #delete something
-    tree_inst.display() #display tree again
+    print tree_inst #display tree again
 
     '''
     __nodes = []
@@ -105,12 +105,6 @@ class BSearchTree(bTree):
         getattr(self,iterate)(root)
         return self.__nodes
             
-    def display(self):
-        """Displays Tree in a (somewhat) human-readable format
-        """
-        for each in self.getIterator(iterate='_preOrder'):
-            print each
-
     def find(self,data,return_parent=False):
         """
         if a matching Node found: Returns Matching node
